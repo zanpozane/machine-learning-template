@@ -7,7 +7,7 @@ import joblib
 data = pd.read_csv('data/training_data.csv')
 
 # Separate the input features (jtm, jtr, gd) and the output (hari)
-X = data[['jtm', 'jtr', 'gd']]
+X = data[['progres_pekerjaan']]
 y = data['hari']
 
 # Train the Linear Regression model

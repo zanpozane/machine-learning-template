@@ -14,7 +14,7 @@ def predict():
     data = request.get_json()
 
     # Extract the input features from the data
-    features = np.array([data['jtm'], data['jtr'], data['gd']]).reshape(1, -1)
+    features = np.array([data['progres_pekerjaan']]).reshape(1, -1)
 
     # Make a prediction
     prediction = model.predict(features)[0]
