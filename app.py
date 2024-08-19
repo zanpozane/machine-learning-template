@@ -20,7 +20,7 @@ def predict():
     prediction = model.predict(features)[0]
 
     # Return the prediction as a JSON response
-    return jsonify({'prediction': prediction})
+    return jsonify({'prediction': int(prediction)})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=8000, debug=True)
